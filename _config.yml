@@ -1,2 +1,3 @@
 name: WKirgsn, SW Engineer
 markdown: kramdown 
+permalink: /blog/:year/:month/:day/:title
