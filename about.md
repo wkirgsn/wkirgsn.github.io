@@ -2,6 +2,7 @@
 layout: page
 title: About
 ---
+
 Hi, my name is *{{site.author.name}}*.
 
 ![This is me in Japan](/images/Kyoto_ProfilePic_small.jpg)
