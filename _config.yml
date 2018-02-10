@@ -9,8 +9,8 @@ permalink:        pretty
 
 # Setup
 title:            Kirgsn
-tagline:          'SW Developer Blog'
-description:      'Sharing insights I gathered on my journey to data science and machine learning'
+tagline:          'Machine Learning Blog'
+description:      'Sharing insights I gathered on my journey to Data Science and Machine Learning'
 url:              https://github.com/wkirgsn
 baseurl:          /
 
