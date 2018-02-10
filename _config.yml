@@ -1,3 +1,28 @@
-name: WKirgsn, SW Engineer
-markdown: kramdown 
-permalink: /blog/:year/:month/:day/:title
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+# following line dropped in order to set up running jekyll v3.0
+# relative_permalinks: true
+
+# Setup
+title:            Kirgsn
+tagline:          'SW Developer Blog'
+description:      'Sharing insights I gathered on my journey to data science and machine learning'
+url:              https://github.com/wkirgsn
+baseurl:          /
+
+author:
+  name:           'Wilhelm Kirchgaessner'
+  url:            https://github.com/wkirgsn
+
+plugins:          [jekyll-paginate]
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/wkirgsn
