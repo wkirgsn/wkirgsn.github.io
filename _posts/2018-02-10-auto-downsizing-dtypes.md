@@ -13,8 +13,7 @@ Consider this virtual example
 >>> import pandas as pd
 >>> import numpy as np
 
->>> df = pd.DataFrame({'name': ['Walter', 'David', 'Jamie',
-                                 'Kendra', 'Zoey'], 
+>>> df = pd.DataFrame({'name': ['Walter', 'David', 'Jamie', 'Kendra', 'Zoey'], 
                        'age': [28, 31, 54, 44, 51]},
                       dtype=np.float32)
 
@@ -94,12 +93,13 @@ class Reducer:
         return pd.concat(ret_list, axis=1)
 
     def _reduce(self, s, colname, verbose):
+
         # skip NaNs
         if s.isnull().any():
             if verbose:
                 print(colname, 'has NaNs - Skip..')
-            print(colname, 'has NaNs - Skip..')
             return s
+
         # detect kind of type
         coltype = s.dtype
         if np.issubdtype(coltype, np.integer):
@@ -111,6 +111,7 @@ class Reducer:
                 print(colname, 'is', coltype, '- Skip..')
             print(colname, 'is', coltype, '- Skip..')
             return s
+
         # find right candidate
         for cand, cand_info in self._type_candidates(conv_key):
             if s.max() <= cand_info.max and s.min() >= cand_info.min:
@@ -126,4 +127,21 @@ class Reducer:
         print('Dropping it..')
 {% endhighlight %}
 
+This class can be used the following way:
 
+{% highlight py %}
+import pandas as pd
+
+dataset = pd.read_csv('path/to/data')
+reducer = Reducer()
+dataset = reducer.reduce(dataset)
+{% endhighlight %}
+
+The minimum datatypes to be converted can be controlled by the 'conv_table' that is an optional argument for the class' init function.
+The default converts to all integers and at most to float32. 
+Neat thing about this presented implementation: It even takes advantage of multiple CPU cores when available via the [joblib](https://pythonhosted.org/joblib/parallel.html) python library.
+
+# Conclusion
+
+Dealing with inappropriate data types can be now a thing of the past by utilizing sophisticated reducing classes.
+Converting the dataset and saving it again to disk can save a considerable amount of disk space and, even more crucial, lessens the allocated RAM such that more actual data can be taken into account.

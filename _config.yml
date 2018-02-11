@@ -32,5 +32,6 @@ author:
   url:            https://github.com/wkirgsn
 
 show_downloads: true
-#google_analytics:
+google_analytics: UA-113945670-1
+
 
