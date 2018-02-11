@@ -91,8 +91,6 @@ class Reducer:
                                                 (df[c], c, verbose) for c in
                                                 df.columns)
 
-        del df
-        gc.collect()
         return pd.concat(ret_list, axis=1)
 
     def _reduce(self, s, colname, verbose):

@@ -1,6 +1,3 @@
-# Dependencies
-markdown:         redcarpet
-
 # Permalinks
 permalink:        pretty
 # following line dropped in order to set up running jekyll v3.0
@@ -13,15 +10,27 @@ description:      'Sharing insights I gathered on my journey to Data Science and
 url:              https://github.com/wkirgsn
 baseurl:          /
 
+#theme: jekyll-theme-modernist
+
+
+# paginator
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate:         5
+
+# Custom cars
+github:
+  owner_url:      https://github.com/wkirgsn
+  owner_name:     WKirgsn
+  repository_url: https://github.com/wkirgsn/wkirgsn.github.io
+  
+
 author:
   name:           'Wilhelm Kirchgaessner'
   url:            https://github.com/wkirgsn
 
-plugins:          [jekyll-paginate]
-paginate:         5
+show_downloads: true
+#google_analytics:
 
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/wkirgsn
