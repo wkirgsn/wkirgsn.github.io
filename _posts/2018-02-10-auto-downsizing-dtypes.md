@@ -145,3 +145,6 @@ Neat thing about this presented implementation: It even takes advantage of multi
 
 Dealing with inappropriate data types can be now a thing of the past by utilizing sophisticated reducing classes.
 Converting the dataset and saving it again to disk can save a considerable amount of disk space and, even more crucial, lessens the allocated RAM such that more actual data can be taken into account.
+
+* * *
+

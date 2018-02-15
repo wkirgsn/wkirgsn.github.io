@@ -14,4 +14,4 @@ With this blog I'd like to share my experience.
 
 Check out my [GitHub repos](https://github.com/wkirgsn).
 
-Find me on [Kaggle](https://www.kaggle.com/wkirgsn).
+Find me on [Kaggle](https://www.kaggle.com/wkirgsn) and [XING](https://www.xing.com/profile/Wilhelm_Kirchgaessner).
