@@ -140,8 +140,7 @@ What if I need a separate scaling for my independent and dependent features sinc
 
 ```py
 class Scaler(BaseEstimator, TransformerMixin):
-    """scales selected columns only with given scaler.
-    Parameter 'select' is either 'x' or 'y' """
+    """scales selected columns only with given scaler"""
     def __init__(self, scaler, columns):
         self.scaler = scaler
         self.cols = columns
