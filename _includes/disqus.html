@@ -2,8 +2,16 @@
 <script>
 
     var disqus_config = function () {
-        this.page.url = "[wkirgsn.github.io]{{page.url}}";
-        this.page.identifier = "{{page.url}}"; 
+        this.page.url = document.location.href;
+        var pathname = document.location.pathname;
+        var dividerList = pathname.split("/");
+        if(dividerList[dividerList.length - 1] == "") {
+            // there exist trailing "/", we should remove them
+            pathname = pathname.slice(0, -1)
+        }
+        // remove .html if any
+        pathname = pathname.replace(".html", "");
+        this.page.identifier = pathname;
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE
