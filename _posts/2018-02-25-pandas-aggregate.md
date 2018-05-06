@@ -2,6 +2,7 @@
 layout: post
 title: "High Cardinality and Custom Aggregations"
 date: 2018-02-25
+comments: true
 ---
 
 Every now and then transforming data column-by-column, e.g. by adding the log of each floating-point feature to the dataset, is maybe not enough and more ambitious transformations are desired.

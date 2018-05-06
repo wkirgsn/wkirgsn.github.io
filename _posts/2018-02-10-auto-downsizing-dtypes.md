@@ -2,6 +2,7 @@
 layout: post
 title: "Auto-Downsizing data"
 date: 2018-02-10
+comments: true
 ---
 
 There is a vast amount of data published on [Kaggle Datasets](https://www.kaggle.com/datasets), that one can download and play around with for experimental purposes.

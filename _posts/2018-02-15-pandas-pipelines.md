@@ -2,6 +2,7 @@
 layout: post
 title: "Pandas and sklearn pipelines"
 date: 2018-02-15
+comments: true
 ---
 Having to deal with a lot of labeled data, one won't come around using the great [pandas](https://pandas.pydata.org/) library sooner or later.
 The benefits of it over raw numpy are obvious.
