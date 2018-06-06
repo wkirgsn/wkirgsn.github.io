@@ -105,7 +105,7 @@ class Reducer:
         coltype = s.dtype
         if np.issubdtype(coltype, np.integer):
             conv_key = 'int' if s.min() < 0 else 'uint'
-        elif np.issubdtype(coltype, np.float):
+        elif np.issubdtype(coltype, np.floating):
             conv_key = 'float'
         else:
             if verbose:
