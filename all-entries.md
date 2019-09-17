@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Entries
+title: Posts
 ---
 
 {% for post in site.posts %}
