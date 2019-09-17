@@ -169,8 +169,8 @@ dt {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 10px;
-    background: blue;
     margin: 6px auto;
+   
 
     li {
       font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -209,7 +209,8 @@ dt {
         float: left;
         margin-left: 0px;
       }
-
+      
+      
       &.downloads {
         float: right;
         margin-left: 6px;
@@ -302,7 +303,5 @@ section {
   section {
     margin-top: 40px;
   }
-  nav {
-    display: none;
-  }
+ 
 }
